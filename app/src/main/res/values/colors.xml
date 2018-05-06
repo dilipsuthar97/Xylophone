@@ -10,5 +10,27 @@
     <color name="green">#2ecc71</color>
     <color name="blue">#3498db</color>
     <color name="purple">#9b59b6</color>
+    <color name="gray">#263238</color>
+
+    <color name="bgButtonRedStart">#D50000</color>
+    <color name="bgButtonRedEnd">#ef6052</color>
+
+    <color name="bgButtonOrangeStart">#FF3D00</color>
+    <color name="bgButtonOrangeEnd">#e67e22</color>
+
+    <color name="bgButtonYellowStart">#e1ad03</color>
+    <color name="bgButtonYellowEnd">#FFFF00</color>
+
+    <color name="bgButtonTurquoiseStart">#00BFA5</color>
+    <color name="bgButtonTurquoiseEnd">#1DE9B6</color>
+
+    <color name="bgButtonGreenStart">#00C853</color>
+    <color name="bgButtonGreenEnd">#64DD17</color>
+
+    <color name="bgButtonBlueStart">#2962FF</color>
+    <color name="bgButtonBlueEnd">#00E5FF</color>
+
+    <color name="bgButtonPurpleStart">#AA00FF</color>
+    <color name="bgButtonPurpleEnd">#D500F9</color>
 
 </resources>
