@@ -4,110 +4,197 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/gray"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
-    <android.support.v7.widget.CardView
-        style="@style/KeyStyle"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="5dp">
-        <Button
-            android:id="@+id/c_key"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/bg_c_button" />
-    </android.support.v7.widget.CardView>
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="XYPHONE"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <android.support.v7.widget.CardView
+        android:id="@+id/c_key"
         style="@style/KeyStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         app:cardCornerRadius="5dp">
+
         <Button
-            android:id="@+id/d_key"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/bg_d_button" />
+            android:background="@drawable/bg_c_button"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="C"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:drawableRight="@drawable/ic_brightness_1_black_24dp"
+            android:paddingRight="15dp"
+            android:onClick="playC">
+        </Button>
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
+        android:id="@+id/d_key"
         style="@style/KeyStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        app:cardCornerRadius="5dp">
-        <Button
-            android:id="@+id/e_key"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/bg_e_button" />
-    </android.support.v7.widget.CardView>
-
-    <android.support.v7.widget.CardView
-        style="@style/KeyStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        app:cardCornerRadius="5dp">
-        <Button
-            android:id="@+id/f_key"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/bg_f_button" />
-    </android.support.v7.widget.CardView>
-
-    <android.support.v7.widget.CardView
-        style="@style/KeyStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="5dp"
         android:layout_marginRight="20dp"
         app:cardCornerRadius="5dp">
+
         <Button
-            android:id="@+id/g_key"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/bg_g_button" />
+            android:background="@drawable/bg_d_button"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="D"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:drawableRight="@drawable/ic_brightness_1_black_24dp"
+            android:paddingRight="15dp"
+            android:onClick="playD"/>
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
+        android:id="@+id/e_key"
         style="@style/KeyStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="35dp"
         app:cardCornerRadius="5dp">
+
         <Button
-            android:id="@+id/a_key"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/bg_a_button" />
+            android:background="@drawable/bg_e_button"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="E"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/ic_brightness_1_black_24dp"
+            android:paddingRight="15dp"
+            android:onClick="playE"/>
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
+        android:id="@+id/f_key"
         style="@style/KeyStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="50dp"
         app:cardCornerRadius="5dp">
+
         <Button
-            android:id="@+id/b_key"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/bg_b_button" />
+            android:background="@drawable/bg_f_button"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="F"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/ic_brightness_1_black_24dp"
+            android:paddingRight="15dp"
+            android:onClick="playF"/>
     </android.support.v7.widget.CardView>
 
+    <android.support.v7.widget.CardView
+        android:id="@+id/g_key"
+        style="@style/KeyStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="65dp"
+        app:cardCornerRadius="5dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_g_button"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="G"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/ic_brightness_1_black_24dp"
+            android:paddingRight="15dp"
+            android:onClick="playG"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/a_key"
+        style="@style/KeyStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="80dp"
+        app:cardCornerRadius="5dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_a_button"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="A"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:drawableRight="@drawable/ic_brightness_1_black_24dp"
+            android:paddingRight="15dp"
+            android:onClick="playA"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/b_key"
+        style="@style/KeyStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="95dp"
+        app:cardCornerRadius="5dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_b_button"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="B"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:drawableRight="@drawable/ic_brightness_1_black_24dp"
+            android:paddingRight="15dp"
+            android:onClick="playB"/>
+    </android.support.v7.widget.CardView>
 
 
 </LinearLayout>
